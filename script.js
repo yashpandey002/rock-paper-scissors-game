@@ -91,13 +91,16 @@ const playSingleGame = function () {
 const game = function () {
     let compWinningCount = 0;
     let playerWinningCount = 0;
-    for (let i = 0; i < 5; i++) {
+    let gameLength = 5;
+    for (let i = 0; i < gameLength; i++) {
         const currentWinner = playSingleGame();
 
         if (currentWinner === 'player') {
             playerWinningCount++;
         } else if (currentWinner == 'computer') {
             compWinningCount++;
+        } else if (currentWinner == 'tied') {
+            gameLength++;
         }
     }
 
