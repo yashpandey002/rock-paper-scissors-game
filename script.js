@@ -107,5 +107,3 @@ const game = function () {
     console.log(`Computer Won: ${compWinningCount}`);
     console.log(`Player Won: : ${playerWinningCount}`);
 };
-
-game();

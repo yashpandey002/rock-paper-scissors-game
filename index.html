@@ -4,8 +4,54 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rock Paper Scissors</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" defer></script>
     </head>
     <body>
-        <script src="./script.js"></script>
+        <div class="container">
+            <div class="heading-box">
+                <h1 class="heading">Can you beat the computer?</h1>
+            </div>
+            <div class="score-board-box flex">
+                <div class="score-box flex">
+                    <h3 class="score__heading">
+                        YOU: <span id="player-score">0</span>
+                    </h3>
+                    <div class="current-choosed-option">?</div>
+                </div>
+                <div class="score-box flex">
+                    <h3 class="score__heading">
+                        COMPUTER: <span id="computer-score">0</span>
+                    </h3>
+                    <div class="current-choosed-option">?</div>
+                </div>
+            </div>
+            <div class="updates-box">
+                <h4 class="instruction-heading update">choose your weapon</h4>
+                <p class="game-rule update-desc">
+                    (First to score 5 points will win)
+                </p>
+            </div>
+            <div class="options-box flex">
+                <div class="option__box option__box--stone flex">
+                    <div class="option">✊</div>
+                    <div class="option__name" id="✊">Rock</div>
+                </div>
+                <div class="option__box option__box--paper flex">
+                    <div class="option">✋</div>
+                    <div class="option__name" id="✋">Paper</div>
+                </div>
+                <div class="option__box option__box--scissors flex">
+                    <div class="option">✌</div>
+                    <div class="option__name" id="✌">Paper</div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
