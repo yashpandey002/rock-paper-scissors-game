@@ -1,0 +1,144 @@
+/*************************************/
+/* Root settings */
+/*************************************/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
+    background-color: #6da4e8;
+    text-transform: capitalize;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*************************************/
+/* Utility classes */
+/*************************************/
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/*************************************/
+/* Heading */
+/*************************************/
+.heading-box {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.heading {
+    font-size: 6.4rem;
+    text-align: center;
+    color: #f8e700;
+}
+
+/*************************************/
+/* Score board */
+/*************************************/
+.score-board-box {
+    justify-content: center;
+    gap: 16rem;
+    margin-bottom: 3rem;
+}
+
+.score-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.score__heading {
+    font-size: 4rem;
+    color: #fff;
+}
+
+#player-score,
+#computer-score {
+    color: #f8e700;
+}
+
+.current-choosed-option {
+    font-size: 8rem;
+    color: #fff;
+}
+
+/*************************************/
+/* Updates */
+/*************************************/
+
+.updates-box {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.instruction-heading {
+    font-size: 3.2rem;
+    color: #fff;
+}
+
+.game-rule {
+    font-size: 2rem;
+    color: #fff;
+}
+
+/*************************************/
+/* Options */
+/*************************************/
+.options-box {
+    justify-content: center;
+    gap: 6.4rem;
+}
+
+.option__box {
+    width: 150px;
+    height: 200px;
+    background-color: #000;
+    border: 5px solid #f8e700;
+    border-radius: 10px;
+    transition: transform 0.3s;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.option__box:hover,
+.option__box:active {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 50px 10px hsla(56, 100%, 49%, 0.8);
+}
+
+.option {
+    font-size: 8rem;
+}
+
+.option__name {
+    font-size: 2.4rem;
+    color: #fff;
+}
